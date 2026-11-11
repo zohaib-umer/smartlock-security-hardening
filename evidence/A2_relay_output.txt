@@ -1,0 +1,18 @@
+[A2] Listening on 127.0.0.1:8000
+[A2] Hub connected
+[A2] Connected to lock 10.10.10.11:9283
+[A2] Negotiated suite: AES256-GCM
+[A2] CERT replaced: smartlock-23i-0528.local -> attacker-test-device.local
+[A2] PAIR forwarded
+[A2] HUB <-> RELAY DH: A=665542049926, B=752392537254, key sha256 prefix=cf768ff16543a8d1
+[A2] RELAY <-> LOCK DH: A=656274330118, B=300939894579, key sha256 prefix=c862dcf06ec923b9
+[A2] Keys differ: YES
+[A2] Decrypted lock greeting: Paired with SmartLock. Pairing secret: FLAG{75155070ff85ba5c}
+[A2] Hub plaintext command: STATUS
+[A2] Lock plaintext reply: STATE LOCKED unlocks=3
+[A2] Hub plaintext command: UNLOCK
+[A2] Lock plaintext reply: DOOR OPENED (unlock #4)
+[A2] Hub plaintext command: LOCK
+[A2] Lock plaintext reply: DOOR LOCKED
+[A2] Hub plaintext command: QUIT
+[A2] Done: both independent DH sessions and record translation succeeded

@@ -1,0 +1,8 @@
+[A5] Loaded captured HELLO, PAIR, DHCLIENT, and second client MSG (stock UNLOCK)
+[A5] Replay record nonce=5b764d3faa47e2e9e42bf076 ct_len=22 bytes
+[A5] Original server key persists across sessions, and replay uses captured client DH public value.
+[A5] Replay #1 accepted at record layer; response ct=02ff3ead7c9d05d5bfee8244cc6f546c5ab6ddb0f7c144d7...
+[A5] For proof of door state, compare STATUS counter before/after with a normal hub session.
+[A5] Replay #2 accepted at record layer; response ct=02ff3ead7c9d05d5bfee8244cc6f546c5ab6ddb0f7ce448a...
+[A5] For proof of door state, compare STATUS counter before/after with a normal hub session.
+[A5] RESULT: 2 fresh TCP sessions tested with an unchanged captured UNLOCK record

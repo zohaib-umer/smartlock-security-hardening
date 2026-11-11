@@ -1,0 +1,23 @@
+Original PCAP archive verification (structural record boundaries only; does not assert exploit success):
+A1_after.pcap: 23 packets, valid
+A1_before.pcap: 23 packets, valid
+A2_client.pcap: 23 packets, valid
+A2_hub_side.pcap: 23 packets, valid
+A2_lock_side.pcap: 24 packets, valid
+A2_server.pcap: 24 packets, valid
+A3_normal_session.pcap: 23 packets, valid
+A4_normal_session.pcap: 23 packets, valid
+A5_baseline.pcap: 82 packets, valid
+A5_replay.pcap: 59 packets, valid
+C_A1_downgrade_fixed.pcap: 10 packets, valid
+C_A1_downgrade_v2.pcap: 23 packets, valid
+C_A2_hub.pcap: 12 packets, valid
+C_A2_server.pcap: 12 packets, valid
+C_A3_v2_session.pcap: 24 packets, valid
+C_A4_v2_session.pcap: 23 packets, valid
+C_A5_baseline.pcap: 23 packets, valid
+C_A5_replay.pcap: 44 packets, valid
+C_v2_normal.pcap: 23 packets, valid
+normal_session.pcap: 23 packets, valid
+
+AI-audit and PIN analysis files were generated during report assembly and are identified as such.

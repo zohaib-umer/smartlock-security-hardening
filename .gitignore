@@ -1,0 +1,29 @@
+# Local build outputs
+/build/
+/bin/
+/a2_mitm
+/a3_recover
+/a4_nonce
+/a5_replay
+/benchmark
+/smartlock_selftest
+*.o
+*.obj
+*.exe
+*.out
+
+# Local configuration and private instance material
+.env
+.env.*
+!.env.example
+instance.txt
+*.key
+*.pem
+
+# Editor and OS files
+.vscode/
+.idea/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

@@ -1,0 +1,9 @@
+Measurement provenance: 2026-11-10; locally executed in this report-generation Linux container, NOT on the user's Kali VirtualBox machines.
+Host: Linux-6.18.57-x86_64-with-glibc2.41; x86_64; AMD EPYC 9V74; 5 exposed vCPUs; KVM virtualized.
+Compiler: g++ (Debian 14.2.0-19) 14.2.0
+OpenSSL: OpenSSL 3.5.5 27 Jan 2026 (Library: OpenSSL 3.5.5 27 Jan 2026)
+Flags: -std=c++17 -O2 -Wall -Wextra; -lcrypto.
+Handshake clients used actual SmartLock protocol and both authenticating v2 certificate/transcript; 30 TCP sessions per version over 127.0.0.1 to a real local server, start immediately before connect; stop after authenticated greeting decryption.
+Records: five independent runs of 10,000 1024-byte encryptions plus decryptions per version; v1 AES256-GCM and v2 AES256-GCM directional key, actual library code. v1 deliberately reuses static nonce according to its insecure baseline.
+Wire overhead counts complete TAB-separated key:value MSG line encoded as hex, including name fields and newline; not TCP/IP headers.
+Means and sample SD of run-level values, not pooled byte timings. Warm-up/virtualization effects can affect absolute results.

@@ -1,0 +1,2 @@
+[hub] abort: bad certificate signature
+[hub] negotiated suite: AES256-GCM

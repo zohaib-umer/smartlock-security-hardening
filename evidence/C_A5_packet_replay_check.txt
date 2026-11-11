@@ -1,0 +1,4 @@
+Source: C_A5_replay.pcap
+Complete rec field duplicates in raw packet payloads (including potential capture reassemblies/retransmissions):
+bytes=30; occurrences=2; sha256_prefix=94685914e522ce33; seq_header_hex=0000000000000001
+Interpret together with C_A5_replay_result.txt and before/after counter logs; raw payload byte equality by itself does not establish when application accepted a record.

@@ -1,0 +1,6 @@
+[hub] negotiated suite: AES256-GCM
+[hub] device claims to be: smartlock-23i-0528.local (certificate not checked)
+[lock] Paired with SmartLock. Pairing secret: FLAG{75155070ff85ba5c}
+[lock] STATE LOCKED unlocks=5
+[lock] DOOR OPENED (unlock #6)
+[lock] DOOR LOCKED

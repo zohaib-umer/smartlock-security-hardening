@@ -1,0 +1,10 @@
+Captured PAIR field: pinhash:55fb549d3fa8b9aa38da7ddd5a2d1d5e
+Provided wordlist: smartlock/pin_wordlist.txt (86 entries)
+Candidate format: dictionary word followed by three decimal digits (000 through 999).
+Recovered match: turbo681
+Verification: MD5("turbo681") = 55fb549d3fa8b9aa38da7ddd5a2d1d5e
+Method applied in the report assembly environment: exhaustive 86,000 candidate dictionary/mask comparison using hashlib.md5 against the captured MD5 value. No value was read from instance.txt for the recovery.
+Equivalent Kali lab command (hashcat syntax):
+  printf '%s\n' '55fb549d3fa8b9aa38da7ddd5a2d1d5e' > captured.md5
+  hashcat -m 0 -a 6 captured.md5 ./smartlock/pin_wordlist.txt '?d?d?d'
+The student must reproduce the recovery at the viva using the provided tools.

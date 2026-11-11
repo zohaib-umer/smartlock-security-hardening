@@ -1,0 +1,25 @@
+CS3002 Part C.2 AI AUDIT | 23i-0528-F | Zohaib Umer
+
+This comparison is a review exercise based on an intentionally flawed AI-generated AES-GCM sketch. It is not a claim of a historical student commit or observation from the VM screenshots. The student should explain this review in their own words in the viva.
+
+UNSAFE INITIAL IDEA (illustrative fragment):
+  auto nonce = std::vector<uint8_t>(12, 0); // fixed for every MSG
+  // call AES-GCM for each message without a sequence value in AAD
+
+FLAWS:
+1. Every record protected under the same key receives the same 96-bit nonce, so GCM repeats the CTR keystream. The A4 attack shows C1 xor C2 equals P1 xor P2 over the ciphertext bytes.
+2. Without authenticated record ordering the receiver cannot detect replays or reordered commands. The A5 attack demonstrates the impact on UNLOCK.
+
+CORRECTED IMPLEMENTATION IN SUBMITTED securelink2.cpp:
+- derive_key uses OpenSSL EVP_KDF / HKDF-SHA256 with separate contexts c2s and s2c.
+- make_nonce(seqno) produces 4 zero prefix bytes plus an 8-byte big-endian sequence, 12 bytes total, unique for distinct sequence numbers under one key.
+- seal authenticates the 8-byte big-endian sequence as GCM additional authenticated data and appends a 16-byte authentication tag.
+- open_record rejects unexpected sequence numbers before decrypting and rejects invalid GCM tags before returning plaintext.
+
+TESTS:
+- evidence/C_selftest.log: nonce uniqueness, valid seal/open, wrong sequence, tampered ciphertext, changed tag and truncated record all pass.
+- evidence/C_A4_nonce_test.txt: PASS: 10000 unique 12-byte nonces.
+- evidence/C_A5_replay_result.txt: Replay or out-of-order record.
+
+SCOPE LIMITATION:
+The supplied lock_server2/hub_client2 still transmit a v1 MD5 pairing digest; strong PAKE/verifier protection is proposed in Part B but is not part of securelink2.cpp.

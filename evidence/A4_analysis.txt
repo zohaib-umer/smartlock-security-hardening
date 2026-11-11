@@ -1,0 +1,10 @@
+[A4] Capture-derived suite=AES256-GCM
+[A4] Server MSG records=4
+[A4] Reused nonce=5b764d3faa47e2e9e42bf076
+[A4] Greeting ciphertext bytes=61; STATUS reply ciphertext bytes=22
+[A4] Same nonce under same session key: YES
+[A4] P_greeting xor P_status (hex)=0335282620446c382a3f2d6473180f1e1b2f0410561a
+[A4] nonce_xor_hex=0335282620446c382a3f2d6473180f1e1b2f0410561a
+[A4] STATUS reply prefix recovered from known greeting prefix: STATE LOCKED unlocks=4
+[A4] Note: GCM's trailing 16-byte authentication tags are excluded from XOR.
+[A4] RESULT: nonce reuse and ciphertext XOR demonstrated from captured packets

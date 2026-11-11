@@ -1,0 +1,5 @@
+roll = 23i-0528
+flag = FLAG{75155070ff85ba5c}
+recovered_dh_b = 35932352885
+cracked_pin = turbo681
+nonce_xor_hex = 0335282620446c382a3f2d6473180f1e1b2f0410561a

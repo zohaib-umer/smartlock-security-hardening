@@ -1,0 +1,12 @@
+[PASS] strong suite selection / no NULL
+[PASS] HKDF key derivation and direction separation
+[PASS] AES128 support and unsupported suite rejection
+[PASS] unique 12-byte nonces for different sequences
+[PASS] AES256-GCM seal/open round trip
+[PASS] AES128-GCM seal/open round trip
+[PASS] replay and out-of-order sequences rejected
+[PASS] tampered ciphertext rejected
+[PASS] tampered authentication tag rejected
+[PASS] altered sequence header rejected
+[PASS] truncated records rejected
+ALL PART C CORE TESTS PASSED

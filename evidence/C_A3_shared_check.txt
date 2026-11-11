@@ -1,0 +1,2 @@
+Hub and Lock DH secrets match: YES
+Shared secret size: 256 bytes

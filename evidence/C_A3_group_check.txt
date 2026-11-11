@@ -1,0 +1,5 @@
+DH modulus bits: 2048
+Generator: 2
+Private exponent bits: 256 (hex length approximation)
+Public value generated: YES
+Ephemeral DH key generation: PASS

@@ -1,0 +1,11 @@
+Source: evidence/A1_after.pcap (captured server-facing v1 NULL suite)
+Extracted ct fields, hex-decoded directly without an AES key:
+01: Paired with SmartLock. Pairing secret: FLAG{75155070ff85ba5c}
+02: STATUS
+03: STATE LOCKED unlocks=1
+04: UNLOCK
+05: DOOR OPENED (unlock #2)
+06: LOCK
+07: DOOR LOCKED
+08: QUIT
+This is a plaintext hex-encoding result, not an AES decryption.

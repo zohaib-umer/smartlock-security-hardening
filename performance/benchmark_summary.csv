@@ -1,0 +1,15 @@
+version,metric,n,mean,sample_sd,unit
+v1,handshake_us,30,1102.4818,1015.6411036736047,us
+v2,handshake_us,30,2558.183666666667,828.7396388249732,us
+v1,wire_record_bytes,1,2124.0,0.0,bytes
+v2,wire_record_bytes,1,2110.0,0.0,bytes
+v1,wire_overhead_bytes,1,1100.0,0.0,bytes
+v2,wire_overhead_bytes,1,1086.0,0.0,bytes
+v1,protect_us_per_record,5,1.4719554000000001,0.11265610771414038,us
+v2,protect_us_per_record,5,1.0812826,0.04934327406850908,us
+v1,open_us_per_record,5,1.3330242,0.050303229207477304,us
+v2,open_us_per_record,5,1.2040054,0.009977258305767222,us
+v1,protect_MBps,5,698.665102,48.88609903398397,MBps
+v2,protect_MBps,5,948.5920553999999,42.97896924628809,MBps
+v1,open_MBps,5,769.0650962,29.384691863786365,MBps
+v2,open_MBps,5,850.5413232,7.063752340392147,MBps

@@ -1,0 +1,8 @@
+[A3] Capture-derived suite=AES256-GCM
+[A3] Captured p=1050545998237 g=2 B=300939894579 A=1011641517781
+[A3] recovered_dh_b=35932352885
+[A3] Verify g^b mod p=300939894579; captured B=300939894579
+[A3] Shared secret derived from captured A and recovered b
+[A3] Decrypted greeting: Paired with SmartLock. Pairing secret: FLAG{75155070ff85ba5c}
+[A3] flag=FLAG{75155070ff85ba5c}
+[A3] RESULT: verified discrete log and authenticated greeting decryption
