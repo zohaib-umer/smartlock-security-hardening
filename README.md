@@ -113,3 +113,7 @@ In this run, v2 added handshake work while improving record-processing throughpu
 **Zohaib Umer** · CS3002 Information Security · Assignment 2 · Section F
 
 The original report and filenames retain the coursework identifier `23i-0528` for evidence traceability.
+
+## Further reading
+
+- [Record security design](docs/SECURITY_DESIGN.md): binary format, key derivation, and caller responsibilities.
