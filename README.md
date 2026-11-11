@@ -118,3 +118,4 @@ The original report and filenames retain the coursework identifier `23i-0528` fo
 
 - [Record security design](docs/SECURITY_DESIGN.md): binary format, key derivation, and caller responsibilities.
 - [Evidence guide](evidence/README.md): how to connect captures, test logs, and observed outcomes.
+- [Benchmark guide](performance/README.md): timing boundaries, units, aggregation, and measurement limitations.
